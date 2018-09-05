@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zd112.framework.view.BannerView
+            android:id="@+id/homeBanner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:indicatorSpace="3dp"
+            app:selectedIndicatorColor="@color/white"
+            app:selectedIndicatorHeight="5dp"
+            app:selectedIndicatorWidth="5dp"
+            app:unSelectedIndicatorColor="@color/font_gray"
+            app:unSelectedIndicatorHeight="5dp"
+            app:unSelectedIndicatorWidth="5dp" />
+
+        <com.zd112.framework.view.CusListView
+            android:id="@+id/homeListView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/homeProjectLine"
+            android:divider="@drawable/line"
+            android:dividerHeight="@dimen/line" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
